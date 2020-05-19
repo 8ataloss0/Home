@@ -1,0 +1,340 @@
+body {
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+	color: #5a5a5a;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #5a5a5a;
+}
+
+/* .header,
+.nav,
+.banner,
+.banner-show,
+.product,
+.service,
+.footer {
+	border: red solid 1px;
+}
+ */
+/*----------------------header----------------------*/
+
+.header {
+	height: 120px;
+	width: 1200px;
+	margin: 0 auto;
+	/*盒子在页面居中*/
+	overflow: hidden;
+}
+
+.header .logo {
+	float: left;
+	margin-top: 38px;
+}
+
+.header .search {
+	float: right;
+	margin-top: 32px;
+	width: 360px;
+	height: 40px;
+}
+
+.header .search input {
+	float: left;
+	outline: none;
+	/*使outline属性无效*/
+}
+
+.header .search input[type="text"] {
+	width: 269px;
+	height: 38px;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-radius: 5px 0 0 5px;
+	padding-left: 10px;
+}
+
+.header .search input[type="submit"] {
+	width: 80px;
+	height: 42px;
+	background: #66cc11;
+	border-radius: 0 5px 5px 0;
+	border: none;
+	color: #fff;
+
+}
+
+/*----------------------nav----------------------*/
+
+
+.nav {
+	width: 100%;
+	background: #5c5c5c;
+	height: 50px;
+
+}
+
+.nav ul {
+	width: 1200px;
+	margin: 0 auto;
+	margin-left: 150px;
+}
+
+.nav ul li {
+	width: 180px;
+	height: 50px;
+	display: inline-block;
+	/*不独占一行的块级元素*/
+	text-align: center;
+	line-height: 50px;
+}
+
+.nav ul li a {
+	color: #fff;
+}
+
+.nav ul li.one {
+	background: #66cc11;
+}
+
+/*----------------------banner----------------------*/
+
+
+.banner {
+	background: url(../img/banner.jpg) no-repeat center top;
+	/*no-repeat:图片不会出现平铺或重复的现象*/
+	height: 600px;
+}
+
+.banner-show {
+	height: 430px;
+	background: url(../img/bannerShow.jpg) no-repeat center top;
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+
+.banner-show ul {
+	width: 600px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.banner-show ul li {
+	list-style-type: none;
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 0 10px;
+	position: relative;
+}
+
+.banner-show ul li img {
+	width: 100%;
+}
+
+.banner-show ul:nth-child(1) {
+	margin-top: 40px;
+}
+
+.banner-show ul:nth-child(2) {
+	position: relative;
+	top: -90px;
+	left: 110px;
+}
+
+.banner-show ul li img:last-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	/*不透明度为0*/
+	transition: 1.5s;
+	/*过渡时间为1.5s*/
+}
+
+.banner-show ul li:hover img:last-child {
+	opacity: 1;
+
+}
+
+/*----------------------product----------------------*/
+.product {
+	height: 1350x;
+	background: #f9f9f9;
+	width: 100%;
+}
+
+.product .product-in {
+	position: relative;
+	width: 1200px;
+	height: 1350px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.product .product-in .product-head {
+	text-align: center;
+	padding: 60px 0;
+
+}
+
+.product .product-in .product-head h3 {
+	font-size: 30px;
+	color: #333;
+	font-weight: bold;
+}
+
+.product .product-in .product-head h3>span {
+	color: #66cc11;
+}
+
+.product .product-in .product-head p {
+	font-size: 18px;
+	line-height: 40px;
+	margin-top: -30px;
+}
+
+.product .product-in ul {
+	width: 1200px;
+	margin-left: -30px;
+	margin-top: -30px;
+}
+
+.product .product-in ul li {
+	width: 360px;
+	height: 460px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	float: left;
+	margin: 0 20px;
+	background: #fff;
+	margin-bottom: 40px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.product .product-in ul li h4 {
+	font-size: 26px;
+	padding: 40px 0 15px 0;
+}
+
+.prize {
+	font-size: 20px;
+	color: #66cc11;
+	margin-top: 20px;
+}
+
+.product .product-in ul li a:before {
+	content: "";
+	/*插入生成的内容*/
+	width: 320px;
+	height: 420px;
+	border: 2px solid #66cc11;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.product .product-in ul li a:after {
+	content: "";
+	width: 120px;
+	height: 200px;
+	background: #66cc11;
+	display: inline-block;
+	position: absolute;
+	bottom: -100px;
+	right: -50px;
+	transform: rotate(45deg);
+	/*顺时针旋转45度*/
+}
+
+.product .product-in .more input {
+	position: absolute;
+	margin: auto;
+	top: 1170px;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+}
+
+.product .product-in .more input[type="submit"] {
+	font-family: arial;
+	font-size: 40px;
+	width: 300px;
+	height: 80px;
+	background-color: #66CC11;
+	line-height: 22px;
+	color: #fff;
+	border: none;
+	border-radius: 5px 5px 5px 5px;
+
+}
+
+.service {
+	height: 200px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.service ul {
+	position: absolute;
+	left: 10px;
+}
+
+.service ul li {
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+	padding-left: 100px;
+	padding-top: 30px;
+
+}
+
+.service ul li p {
+
+	padding-top: -20px;
+
+}
+
+.service ul li .iconfont {
+	font-size: 80px;
+	margin: 0 auto;
+}
+
+.footer {
+	height: 200px;
+	width: 100%;
+	background: #5c5c5c;
+}
+
+.footer .footer-in {
+	width: 1200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.footer .footer-in .footerlogo {
+	float: left;
+	margin-top: 38px;
+}
+
+.footer .footer-in p {
+	font-size: 10px;
+	color: #DDDDDD
+}
+
+.footer .footer-in .chat {
+	float: right;
+	padding: 20px;
+}
+
+.footer .footer-in .chat img {
+	width: 100px;
+	height: 100px;
+}
