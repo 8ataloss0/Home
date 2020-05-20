@@ -59,7 +59,7 @@ a {
 
 .header .search input[type="submit"] {
 	width: 80px;
-	height: 42px;
+	height: 40px;
 	background: #66cc11;
 	border-radius: 0 5px 5px 0;
 	border: none;
@@ -80,7 +80,6 @@ a {
 .nav ul {
 	width: 1200px;
 	margin: 0 auto;
-	margin-left: 150px;
 }
 
 .nav ul li {
@@ -125,8 +124,8 @@ a {
 
 .banner-show ul li {
 	list-style-type: none;
-	width: 200px;
-	height: 200px;
+	width: 220px;
+	height: 220px;
 	float: left;
 	margin: 0 10px;
 	position: relative;
@@ -142,8 +141,8 @@ a {
 
 .banner-show ul:nth-child(2) {
 	position: relative;
-	top: -90px;
-	left: 110px;
+	top: -100px;
+	left: 120px;
 }
 
 .banner-show ul li img:last-child {
@@ -195,13 +194,10 @@ a {
 .product .product-in .product-head p {
 	font-size: 18px;
 	line-height: 40px;
-	margin-top: -30px;
 }
 
 .product .product-in ul {
 	width: 1200px;
-	margin-left: -30px;
-	margin-top: -30px;
 }
 
 .product .product-in ul li {
